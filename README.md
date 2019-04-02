@@ -82,17 +82,17 @@ function employee_cpt() {
 add_action( 'init', 'employee_cpt' );
 ```
 
-<img class="alignnone wp-image-5636 size-large" src="https://make.wordpress.org/training/files/2016/02/2_1_16__10_02_PM-1024x819.png" alt="2_1_16__10_02_PM" width="632" height="505" />
+<img class="alignnone wp-image-5636 size-large" src="images/Custom_PostType.png" alt="custom post type" width="632" height="505" />
 
 Via the Dashboard, navigate to “Settings” → “Permalinks” and choose a common permalink setting, then click “Save Changes”. <em>You **must** click “Save Changes”, even if you have not made any changes to your permalink settings, in order for WordPress to recognize posts with your new custom post type.</em>
 
-<img class="alignnone size-large wp-image-5645" src="https://make.wordpress.org/training/files/2016/02/2_1_16__10_53_PM-1024x699.png" alt="2_1_16__10_53_PM" width="632" height="431" />
+<img class="alignnone size-large wp-image-5645" src="images/Permalink_reset.png" alt="2_1_16__10_53_PM" width="632" height="431" />
 
 ### Step 3: Install the Advanced Custom Fields Plugin
 
 Via the Dashboard, navigate to “Plugins” → “Add New”. In the “Search Plugins” field, type “Advanced Custom Fields” and press return. Press the “Install Now” button, and then click on the “Activate Plugin” link on the screen that follows.
 
-<img class="alignnone size-large wp-image-5637" src="https://make.wordpress.org/training/files/2016/02/2_1_16__10_07_PM-1024x819.png" alt="2_1_16__10_07_PM" width="632" height="505" />
+<img class="alignnone size-large wp-image-5637" src="images/Install_ACF_&_Activate.png" alt="install_&_Activate_ACF" width="632" height="505" />
 
 ### Step 4: Create a Custom Field Group
 
@@ -100,7 +100,7 @@ The core of Advanced Custom Fields is what it refers to as “Custom Field Group
 
 Click on “Add New” (located next to the “Field Groups” header).
 
-<img class="alignnone size-large wp-image-5638" src="https://make.wordpress.org/training/files/2016/02/2_1_16__10_13_PM-1024x819.png" alt="2_1_16__10_13_PM" width="632" height="505" />
+<img class="alignnone size-large wp-image-5638" src="images/add_acf_grp.png" alt="Create Custom Field Group" width="632" height="505" />
 
 In the Field Group’s title field, enter “Employee Information”.
 
@@ -108,19 +108,19 @@ In the Field Group’s title field, enter “Employee Information”.
 
 Press the “Add Field” button to create our first custom field. The first field we add will have the Field Label “Job Title”. Leave the Field Name to be the one that ACF assigns by default—in this case, “job_title”. Leave the Field Type as “Text” (the default), and leave all other default settings in place.
 
-<img class="alignnone size-large wp-image-5640" src="https://make.wordpress.org/training/files/2016/02/2_1_16__10_18_PM-1024x1017.png" alt="2_1_16__10_18_PM" width="632" height="628" />
+<img class="alignnone size-large wp-image-5640" src="images/field_create.png" alt="First_Custom_Field" width="632" height="628" />
 
 Click the “+ Add Field” button to create a new field. Call this field “Start Date”, leave the Field Name the default (“start_date”), and for the Field Type choose “Date Picker”. Leave all other field options at the default.
 
-<img class="alignnone size-large wp-image-5641" src="https://make.wordpress.org/training/files/2016/02/2_1_16__10_19_PM-1024x1017.png" alt="2_1_16__10_19_PM" width="632" height="628" />
+<img class="alignnone size-large wp-image-5641" src="images/date_picker_type.png" alt="Type_date_picker" width="632" height="628" />
 
 In the “Location” section, you need to tell WordPress under what conditions these fields should appear. The default, and the one you’ll be using, is to apply this field group to a particular post type. In this case, we want to display this field group when the Post Type is equal to “employee”.
 
-<img class="alignnone size-large wp-image-5642" src="https://make.wordpress.org/training/files/2016/02/2_1_16__10_20_PM-1024x1017.png" alt="2_1_16__10_20_PM" width="632" height="628" />
+<img class="alignnone size-large wp-image-5642" src="images/location.png" alt="ACF_Location" width="632" height="628" />
 
 Leave all other field group options as the default. Scroll up to the top of the page, and click on the “Publish” button in the left sidebar to activate this field group.
 
-<img class="alignnone size-large wp-image-5643" src="https://make.wordpress.org/training/files/2016/02/2_1_16__10_21_PM-1024x1017.png" alt="2_1_16__10_21_PM" width="632" height="628" />
+<img class="alignnone size-large wp-image-5643" src="images/publish.png" alt="ACF_Publish" width="632" height="628" />
 
 ### Step 6: Create an “Employee” Post
 
@@ -128,7 +128,7 @@ Create a new post of the type “employee” by selecting “Employees → Add N
 
 Add the employee’s job title to the “Job Title” field that you created that appears below the content editor. Next. click on the “Start Date” field. A jQuery date picker will pop up. Use the date picker to select the employee’s start date.
 
-<img class="alignnone size-large wp-image-5644" src="https://make.wordpress.org/training/files/2016/02/2_1_16__10_28_PM-1024x699.png" alt="2_1_16__10_28_PM" width="632" height="431" />
+<img class="alignnone size-large wp-image-5644" src="images/add_posttype.png" alt="Create_Employee_PostType" width="632" height="431" />
 
 Click the “Publish” button.
 
