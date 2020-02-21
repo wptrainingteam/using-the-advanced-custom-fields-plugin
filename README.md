@@ -2,7 +2,7 @@
 
 ## Description
 
-Advanced Custom Fields (ACF for short) is a plugin that allows you to create _custom field groups_ for posts, pages, or custom post types. It provides a graphical user interface to add a variety of different field types including text fields, WYSIWYG areas, checkboxes, radio buttons, and more. In this lesson you'll learn how to set up the ACF plugin, how to create a custom field group for a custom post type, and how to display this information to a site visitor.
+Advanced Custom Fields (ACF for short) is a plugin that allows you to create _custom field groups_ for posts, pages, or custom post types. It provides a graphical user interface to add a variety of different field types including text fields, WYSIWYG areas, checkboxes, radio buttons, and more. In this lesson, you'll learn how to set up the ACF plugin, how to create a custom field group for a custom post type, and how to display this information to a site visitor.
 
 ## Prerequisite Skills
 
